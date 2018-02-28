@@ -1,0 +1,24 @@
+.all{
+  margin: auto;
+  width: 100px;
+
+}
+
+.page{
+  margin: auto;
+  height: 25px;
+  background-color: black;
+
+}
+.on{
+  margin: auto;
+  float: right;
+
+
+}
+.off{
+margin: auto;
+float: left;
+  color: white;
+
+}
