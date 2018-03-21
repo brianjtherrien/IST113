@@ -10,10 +10,10 @@ function runGuessGame(){
       if (secret > guess){
         alert("You guessed too low.")
       }
-      else if (secret > guess){
+      else if (secret < guess){
         alert("You guessed too high.")
       }
-      else{
+      else if(secret == guess){
         break;
       }
     }
