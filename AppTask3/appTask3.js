@@ -3,7 +3,7 @@ var myItems = [];
 
 function setupLocal() {
 
-  if(localStorage.getItem(myKey) !== null) {
+  if(localStorage.getItem(myKey) != null) {
     let myItemsString = localStorage.getItem(myKey);
     myItems = JSON.parse(myItemsString);
     $(myItems).each(function() {
@@ -15,11 +15,17 @@ function setupLocal() {
   }
 
   $("#buttonElement").on("click", function() {
-    let curVal = $("#inputContent").val()
+    let curVal = $("#inputContent").val();
     createItem(curVal);
     myItems.push(curVal);
     saveItems();
   });
+
+  $("#deleteAll").on("click", function() {
+    deleteAll();
+    saveItems();
+  });
+
 }
 
 function createItem(itemValue) {
@@ -40,6 +46,14 @@ function removeItem(item) {
   }
   $(item).remove();
 }
+
+  function deleteAll(item){
+    $("#listOne").children("li").each(function(){
+      $(this).remove();
+    });
+    myItems = [];
+    saveItems();
+  }
 
 function saveItems() {
   let myItemsString = JSON.stringify(myItems);
