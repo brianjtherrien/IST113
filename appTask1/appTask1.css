@@ -17,12 +17,12 @@ ul li {
     transition: 0.2s;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
+
 ul li:hover {
     background: #ddd;
 }
@@ -48,14 +48,14 @@ ul li:hover {
     margin: 0 auto;
 }
 
-/* Clear floats after the header */
+
 .header:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Style the input */
+
 input {
     border: none;
     width: 75%;
@@ -68,7 +68,6 @@ input {
 
 
 }
-/* Style the "Add" button */
 .addBtn {
     padding: 10px;
     width: 5%;
