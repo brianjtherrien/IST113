@@ -11,7 +11,7 @@ function setupLocal() {
     });
   }
   else {
-    createItem("List One Item");
+    createItem("Pick up dry cleaning");
   }
 
   $("#buttonElement").on("click", function() {
