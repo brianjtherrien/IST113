@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<title>Task Manager</title>
+<link href="appTask4.css" rel="StyleSheet" />
+</head>
+<body>
+<div>
+<h1 id="title">Task Manager(Using jQuery and Local Storage)</h1>
+<h3 id="des">How to use Task Manager:</h3>
+<ul>
+<li id ="des"> To add a task to the list simply type in the input filed and hit "add".</li>
+<li id = "des"> To delete any of the entries just hit "Delete"</li>
+<li id = "des"> Go ahead and refresh the page if you would like it will be saved locally</li>
+</ul>
+</div>
+<div id="container">
+    <input id="inputContent" name="inputContent" type="text" />
+    <button id="buttonElement">Add</button>
+    <button id="deleteAll">Delete All</button>
+<br/> </br>
+  <ul id="listOne">
+    <h3>Tasks</h3>
+  </ul>
+  <br/>
+  </div>
+
+  <div id = "button"><button onclick="formFunction()">Contact</button></div>
+  <form id = "form" onkeypress=" "action='' method='post' class='speaker-form'>
+    <div class='form-row'>
+      <label for='full-name'>Name</label>
+      <input id='full-name'
+            name='full-name'
+            type='text'
+            placeholder = 'John Smith'/>
+    </div>
+    <div class='form-row'>
+      <label for='email'>Email</label>
+      <input id='email'
+             name='email'
+             type='email'
+             placeholder='JohnSmith@example.com'/>
+    </div>
+    <div class='form-row'>
+      <label for='abstract'>Message</label>
+      <textarea id='abstract' name='abstract'></textarea>
+    </div>
+    <div class='form-row'>
+      <button>Submit</button>
+    </div>
+  </form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="appTask4.js"></script>
+</body>
+
+</html>
