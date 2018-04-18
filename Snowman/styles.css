@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sky{
+height:600px;
+background-color: blue;
+}
+.ground{
+  background-color: grey;
+  height:400px;
+}
+.snowman1{
+  width: 200px;
+  height:300px;
+  margin-left: 300px;
+  float:left;
+}
+.snowman2{
+  width: 200px;
+  height:300px;
+  margin-right: 300px;
+  float:right;
+
+}
+.upsky{
+  width:100%;
+  height:300px;
+  background-color:blue;
+}
+.top{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+}
+.middle{
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+}
+.bottom{
+  margin: auto;
+  height:150px;
+  width:150px;
+  border-radius: 50%;
+  background-color: white;
+}
+.sun{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin:auto;
+  float:right;
+
+}
