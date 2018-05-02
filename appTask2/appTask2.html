@@ -1,7 +1,6 @@
 <html>
 
 <head>
-  <meta charset='UTF-8' />
   <title>AppTask2</title>
   <link rel='stylesheet' href='appTask2.css'/>
 
@@ -9,14 +8,15 @@
 
 <body>
     <h1>Task Manager</h1>
-    <input class="textarea" type="text" id="personstask" placeholder="Type here then click 'Add'.">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <input class="personstask" type="text" id="personstask" placeholder="Type here then click 'Add'.">
+    <button id="addBtn">Add</button>
     <br>
     <p id="Tasklabel">Tasks:</p>
     <ul id="tasks">
     </ul>
-    <script src="appTask2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="appTask2.js"></script>
+
 </body>
 
 </html>
