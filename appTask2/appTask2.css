@@ -1,7 +1,43 @@
+*{
+  margin: auto;
+  box-sizing: border-box;
+}
+body{
+  background-color: blue;
+}
 .textarea{
   width: 25%;
 }
 #Tasklabel
 {
   font-size: 30px;
+}
+h1{
+  text-align: center;
+}
+#upper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+
+}
+#lower{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+}
+p{
+  text-align: center;
+}
+ul{
+  text-align: center;
+  width: auto;
+}
+#addBtn{
+  background-color: green;
+}
+#remove{
+  background-color: red;
 }

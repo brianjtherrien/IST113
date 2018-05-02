@@ -3,16 +3,22 @@
   <meta charset='UTF-8' />
   <title>AppTask1</title>
   <link rel='stylesheet' href='appTask1.css'/>
-  <script src="appTask1.js"></script>
+
 </head>
 <body>
     <h1>Task Manager</h1>
-    <input class="textarea" type="text" id="personstask" placeholder="Type here then click 'Add'.">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <div id="upper">
+      <input class="textarea" type="text" id="personstask" placeholder="Type here then click 'Add'.">
+      <button id="add" onclick="newElement()" class="addBtn">Add</button>
+    </div>
+
     <br>
-    <p id="Tasklabel">Tasks:</p>
-    <ul id="tasks">
-    </ul>
+    <div id="lower"
+      <p id="Tasklabel">Tasks:</p>
+      <ul id="tasks">
+      </ul>
+    </div>
+    <script src="appTask1.js"></script>
 </body>
 
 </html>

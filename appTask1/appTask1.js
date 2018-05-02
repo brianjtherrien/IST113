@@ -15,6 +15,22 @@ function newElement() {
 //If there is no text in the text area "error" with and alert telling the user to input something
 
 
-  document.getElementById("personstask").value = ""; //Get what the user entered and set it equal to nothing to clear area
-  li.appendChild(span);
+    var li2 = document.createElement("span");
+    var txt = document.createTextNode("X");
+    li2.className = "remove";
+    li2.appendChild(txt);
+    li.appendChild(li2);
+
+// Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("remove");
+  var i;
+
+  for (i = 0; i < close.length; i++)
+  {
+    close[i].onclick = function()
+    {
+    var div = this.parentElement;
+    div.style.display = "none";
+    }
+  }
 }
