@@ -14,20 +14,18 @@ function newElement() {
     }
 //If there is no text in the text area "error" with and alert telling the user to input something
 
-
-    var li2 = document.createElement("span");
-    var txt = document.createTextNode("X");
-    li2.className = "remove";
-    li2.appendChild(txt);
-    li.appendChild(li2);
-
-// Click on a close button to hide the current list item
-  var close = document.getElementsByClassName("remove");
+//Adds the "X" to the end of each list element as a delete button
+  var li2 = document.createElement("span");
+  var txt = document.createTextNode("X");
+  li2.className = "remove";
+  li2.appendChild(txt);
+  li.appendChild(li2);
+  var take = document.getElementsByClassName("remove");
   var i;
-
-  for (i = 0; i < close.length; i++)
+//adds functionality to remove the list item it is next to when "X" is pressed
+  for (i = 0; i < take.length; i++)
   {
-    close[i].onclick = function()
+    take[i].onclick = function()
     {
     var div = this.parentElement;
     div.style.display = "none";
